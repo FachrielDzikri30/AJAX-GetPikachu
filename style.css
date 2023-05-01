@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+}
+
+#pika {
+    height: 30px;
+    width: 50px;
+    background-color: #e7c859;
+    border-radius: 5px;
+    border: none;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    align-content: center;
+}
+
+#pika:hover{
+    cursor: pointer;
+    background-color: #e4ba20;
+}
+
+#result {
+    color: white;
+    background-color: #e7c859;
+    margin: 0 40%;
+    border-radius: 10px;
+}
+
+#result p {
+    padding: 30px 0;
+}
+
+#result img {
+    width: 200px;
+    height: 200px;
+}
