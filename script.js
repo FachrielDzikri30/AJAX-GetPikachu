@@ -8,14 +8,14 @@ const getPika = document.getElementById("pika");
             const idPokemon = json.id;
             const pikaName = json.name;
             const pikaPic = json.sprites.front_default;
-            const pokemonType = "Type: "+json.types[0].type.name;
+            const pokemonType = +json.types[0].type.name;
             const pokeName = document.createElement("p");
             const pokePic = document.createElement("img");
             const pokeType = document.createElement("p");
 
             pokeName.innerHTML = idPokemon + ": " +pikaName;
             pokePic.src = pikaPic; 
-            pokeType.innerHTML = pokemonType;
+            pokeType.innerHTML ="Type: " + pokemonType;
 
             result.append(pokeName);
             result.append(pokePic);
