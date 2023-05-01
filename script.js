@@ -5,7 +5,7 @@ const getPika = document.getElementById("pika");
                 method: "GET"
             })  
             const json = await response.json();
-            const idPokemon = json.id + ": " +json.species.name;
+            const idPokemon = json.id + ": " +json.name;
             const pikaPic = json.sprites.front_default;
             const pokemonType = "Type: "+json.types[0].type.name;
             const pokeName = document.createElement("p");
